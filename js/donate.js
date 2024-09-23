@@ -31,6 +31,26 @@ document.getElementById('btn-donate-now-feni').addEventListener('click',function
     // feni total fund = current + donated
     const donateFeniBalance = donateFeni + inputDonateFeni;
     document.getElementById('donate-feni').innerText = donateFeniBalance;
+    // till now current available balance
     availableBalance = accountBalance - inputDonateFeni;
+    document.getElementById('acount-balance').innerText = availableBalance;
+})
+
+// donate for quota protest
+document.getElementById('btn-donate-now-quota-protest').addEventListener('click',function(event){
+    event.preventDefault();
+    const inputDonateQoutaProtest = getInputFieldValueById('input-donate-amount-quota-protest');
+    if (isNaN(inputDonateQoutaProtest)){
+        alert('failed to donate money for qouta protest');
+        return;
+    }
+    // get id using function
+    const accountBalance = donnateGetTextValueById('acount-balance');
+    const donateQuotaProtest = donnateGetTextValueById('fund-quota-protest');
+    // quota protest total fund
+    const donateProtestBalance = donateQuotaProtest + inputDonateQoutaProtest;
+    document.getElementById('fund-quota-protest').innerText = donateProtestBalance;
+    // till now current available balance
+    availableBalance = accountBalance - inputDonateQoutaProtest;
     document.getElementById('acount-balance').innerText = availableBalance;
 })
