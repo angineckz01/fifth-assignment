@@ -10,15 +10,15 @@
 <body class="bg-white">
     <!-- header section -->
     <header class="sticky top-0">
-        <div class="flex justify-around pt-4 pb-24 bg-orange-200 text-[#111111]">
-            <button class="text-3xl font-semibold bg-green-500 py-3 rounded-md px-5">Blog</button>
+        <div class="flex justify-around pt-4 pb-24 bg-[#F9F7F3] text-[#111111]">
+            <button class="text-3xl font-semibold bg-[#B4F461] py-3 rounded-md px-5">Blog</button>
             <div class="flex items-center gap-3">
                 <img src="./assets/logo.png" alt="">
                 <h2 class="text-3xl font-semibold">Donate Bangladesh</h2>
             </div>
             <div class="flex items-center font-bold gap-3">
                 <img src="./assets/coin.png" alt="">
-                <span class="font-medium text-2xl">10000 BDT</span>
+                <span id="acount-balance" class="font-medium text-2xl">10000</span>
             </div>
         </div>
         <!-- sticky container -->
@@ -30,9 +30,9 @@
     <!-- main section -->
     <main>
         <!-- donate container  -->
-        <div>
-            <!-- item - 1 -->
-            <div class="grid grid-cols-2 gap-8 m-8">
+        <div class="py-20 px-32 ">
+            <!-- item - 1 Noakhali-->
+            <div class="grid grid-cols-2 gap-8 mb-8 border-2 border-gray-200 rounded-3xl p-8">
                 <!-- image -->
                 <div>
                     <img class="w-full" src="./assets/noakhali.png" alt="">
@@ -41,45 +41,45 @@
                 <div>
                     <div class="flex items-center py-2 p-3 border-2 rounded-md">
                         <img src="./assets/coin.png" alt="">
-                        <button class="flex justify-center" class="pt-3"> 10 BDT</button>
+                        <div id="donate-noakhali" class="flex justify-center" class="pt-3">100</div>
                     </div>
                     <h2 class="font-bold text-[#111111] text-3xl pt-6">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p class="text-gray-500 pt-3"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <div class="pt-6">
-                        <input class="py-4 px-16 w-full rounded-md" type="text" placeholder="Write donation amount">
+                        <input id="input-donate-amount-noakhali" class="py-4 px-16 w-full rounded-md" type="text" placeholder="Write donation amount">
                     </div>
                     <div class="pt-6">
-                        <button class=" bg-[#B4F461] text-2xl text-[#111111] py-3 px-8 font-semibold rounded-md  w-full">Donate Now</button>
+                        <button id="btn-donate-now-noakhali" class=" bg-[#B4F461] text-2xl text-[#111111] py-3 px-8 font-semibold rounded-md  w-full">Donate Now</button>
                     </div>
                 </div>
             </div>
-            <!-- item - 2 -->
-            <div class="grid grid-cols-2 gap-8 m-8">
+            <!-- item - 2 feni-->
+            <div class="grid grid-cols-2 gap-8 mb-8 border-2 border-gray-200 rounded-3xl p-8">
                 <!-- image 2-->
                 <div>
-                    <img class="w-full" src="./assets/noakhali.png" alt="">
+                    <img class="w-full" src="./assets/feni.png" alt="">
                 </div>
                 <!-- text container  -->
                 <div>
                     <div class="flex items-center py-2 p-3 border-2 rounded-md">
                         <img src="./assets/coin.png" alt="">
-                        <button class="flex justify-center" class="pt-3"> 10 BDT</button>
+                        <div id="donate-feni" class="flex justify-center" class="pt-3"> 10</div>
                     </div>
-                    <h2 class="font-bold text-[#111111] text-3xl pt-6">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="font-bold text-[#111111] text-3xl pt-6">Donate for Flood at Feni, Bangladesh</h2>
                     <p class="text-gray-500 pt-3"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <div class="pt-6">
-                        <input class="py-4 px-16 w-full rounded-md" type="text" placeholder="Write donation amount">
+                        <input id="input-donate-amount-feni" class="py-4 px-16 w-full rounded-md" type="text" placeholder="Write donation amount">
                     </div>
                     <div class="pt-6">
-                        <button class=" bg-[#B4F461] text-2xl text-[#111111] py-3 px-8 font-semibold rounded-md  w-full">Donate Now</button>
+                        <button id="btn-donate-now-feni" class=" bg-[#B4F461] text-2xl text-[#111111] py-3 px-8 font-semibold rounded-md  w-full">Donate Now</button>
                     </div>
                 </div>
             </div>
-            <!-- item - 3 -->
-            <div class="grid grid-cols-2 gap-8 m-8">
+            <!-- item - 3 qouta protest-->
+            <div class="grid grid-cols-2 gap-8 border-2 border-gray-200 rounded-3xl p-8">
                 <!-- image 3-->
                 <div>
-                    <img class="w-full" src="./assets/noakhali.png" alt="">
+                    <img class="w-full" src="./assets/quota-protest.png" alt="">
                 </div>
                 <!-- text container  -->
                 <div>
@@ -87,7 +87,7 @@
                         <img src="./assets/coin.png" alt="">
                         <button class="flex justify-center" class="pt-3"> 10 BDT</button>
                     </div>
-                    <h2 class="font-bold text-[#111111] text-3xl pt-6">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <h2 class="font-bold text-[#111111] text-3xl pt-6">Donate for Quota Protest, Bangladesh</h2>
                     <p class="text-gray-500 pt-3"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
                     <div class="pt-6">
                         <input class="py-4 px-16 w-full rounded-md" type="text" placeholder="Write donation amount">
@@ -103,5 +103,7 @@
     <footer>
 
     </footer>
+    <script src="./js/donate.js"></script>
+    <script src="./js/function.js"></script>
 </body>
 </html>
