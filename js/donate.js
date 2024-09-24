@@ -27,6 +27,9 @@ document.getElementById('btn-donate-now-noakhali').addEventListener('click', fun
     const p = document.createElement('p');
     p.classList.add('bg-gray-300');
     p.classList.add('text-black');
+    p.classList.add('p-3');
+    p.classList.add('border-2');
+    p.classList.add('rounded-xl');
     p.classList.add('text-xl');
     p.classList.add('text-center');
     p.innerText = `Donated : ${inputDonateNoakhali} Tk ${donateNoakhaliTitle}. Available balance : ${availableBalance}`;
@@ -65,6 +68,9 @@ document.getElementById('btn-donate-now-feni').addEventListener('click',function
     const p = document.createElement('p');
     p.classList.add('bg-gray-200');
     p.classList.add('text-black');
+    p.classList.add('p-3');
+    p.classList.add('border-2');
+    p.classList.add('rounded-xl');
     p.classList.add('text-xl');
     p.classList.add('text-center');
     p.innerText = `Donated : ${inputDonateFeni} Tk ${donateFeniTitle}. Available balance : ${availableBalance}`;
@@ -104,8 +110,11 @@ document.getElementById('btn-donate-now-quota-protest').addEventListener('click'
     // donation amount and current ammount
     const donateProtestTitle = document.getElementById('donate-protest-title').innerText;
     const p = document.createElement('p');
-    p.classList.add('bg-red-100');
+    p.classList.add('bg-blue-200');
     p.classList.add('text-black');
+    p.classList.add('p-3');
+    p.classList.add('border-2');
+    p.classList.add('rounded-xl');
     p.classList.add('text-xl');
     p.classList.add('text-center');
     p.innerText = `Donated : ${inputDonateQoutaProtest} Tk ${donateProtestTitle}. Available balance : ${availableBalance}`;
