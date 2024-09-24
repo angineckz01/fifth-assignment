@@ -22,15 +22,22 @@
                 </div><br>
                 <div class="pt-5 border border-gray-500 rounded-xl p-8 bg-green-200">
                     <h3 class="text-2xl font-semibold text-gray-700 mb-4">2. How do you select an element from the DOM?</h3>
-                    <p class="text-gray-500 text-lg">The Document Object Model(DOM) is a programming interface for web document such as HTML and XML. It represents the structure of a webpage as a tree of objects, where each part of the page (element like headings, paragraphs, imagges, etc) is represented as a node. The DOM allows programming language like JavaScript to interact with and manipulate these elements---  changing text , adding styles, reacting to user actions or dynamically updating the content of the page without reloading the.It'a the bridge between web content (HTML/CSS) and programming(JavaScript) </p>
+                    <p class="text-gray-500 text-lg">To select an element from the dom in JavaScript you can use different methods: <br> 1. getElementById(): This is used to select and element by it's unique ID.It returns a single element because IDs are supposed to be unique on a webpage. <br> 2. gelElementByClassName(): This selects all elements with a specific class name . it returns a collection of elements because multiple elements can share the same class. <br> 3. getElementByTagName(): this selects all element with a certain tag name, like div,p or button, and returns them as a collection. <br> 4. queryselector() : this selects the first element that matches a given css selector , such as an ID,class or tag. <br>5.queryselectorall(): THIS selects all elements that matches a specific css selector and returns them as a list of elements.</p>
                 </div><br>
                 <div class="pt-5 border border-gray-500 rounded-xl p-8 bg-yellow-200">
                     <h3 class="text-2xl font-semibold text-gray-700 mb-4">3.What is event delegation in the context of the DOM, and why is it useful?</h3>
-                    <p class="text-gray-500 text-lg">The Document Object Model(DOM) is a programming interface for web document such as HTML and XML. It represents the structure of a webpage as a tree of objects, where each part of the page (element like headings, paragraphs, imagges, etc) is represented as a node. The DOM allows programming language like JavaScript to interact with and manipulate these elements---  changing text , adding styles, reacting to user actions or dynamically updating the content of the page without reloading the.It'a the bridge between web content (HTML/CSS) and programming(JavaScript) </p>
+                    <p class="text-gray-500 text-lg">Event delegation is a technique in JavaScript where you attach a single event listener to a parent element, instead of adding separate event listeners to multiple child elements. When an event occurs on a child element, it "bubbles up" to the parent, where the event listener can handle it. <br><br> Why Event Delegation is Useful: <br> 1.It improves performance. <br> 2. by using this we can use dynamic elements. <br> 3. we can also simplipied codes which makes our time more efficient and easier and look more interactive.</p>
                 </div><br>
                 <div class="pt-5 border border-gray-500 rounded-xl p-8 bg-blue-200">
                     <h3 class="text-2xl font-semibold text-gray-700 mb-4">4. How do you manipulate an element's attributes and styles using the DOM?</h3>
-                    <p class="text-gray-500 text-lg">The Document Object Model(DOM) is a programming interface for web document such as HTML and XML. It represents the structure of a webpage as a tree of objects, where each part of the page (element like headings, paragraphs, imagges, etc) is represented as a node. The DOM allows programming language like JavaScript to interact with and manipulate these elements---  changing text , adding styles, reacting to user actions or dynamically updating the content of the page without reloading the.It'a the bridge between web content (HTML/CSS) and programming(JavaScript) </p>
+                    <p class="text-gray-500 text-lg">You can manipulate an element's attributes and styles using JavaScript in the DOM in the following ways:
+                        <br>
+                        1. Manipulating Attributes: <br>
+                        getAttribute(): Retrieves the value of an attribute. <br>
+                        setAttribute(): Adds or updates an attribute with a specified value. <br>
+                        removeAttribute(): Removes an attribute from an element. <br> 2. Manipulating Styles: <br>
+                        element.style: Directly modifies an element’s inline styles by accessing or setting individual CSS properties. For example, you can change the background color, width, or height of an element. <br>
+                        classList: Adds, removes, or toggles CSS classes, allowing you to apply or remove styles defined in external stylesheets.</p>
                 </div>
             </div>
         </div>
